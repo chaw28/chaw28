@@ -1,0 +1,57 @@
+# Christopher Shaw
+# 6/1/2024
+# IT Capstone Project
+# Note Taker V1
+
+# creates alias for speech rec for easier use
+import speech_recognition as sr 
+# text to speech conversion library
+import pyttsx3   
+
+# defines function and parameter of the text note, opens mynotes, 
+# writes the note, and prints alert that note is saved
+def save_note_to_file(note_text):  
+    with open("mynotes.txt", "a") as file:
+        file.write(note_text + "\n")
+        print("Note saved to 'mynotes.txt'.")
+
+# defines take_note function, initializes objects and tts engine
+def take_note():
+    recognizer = sr.Recognizer()
+    microphone = sr.Microphone()
+    tts_engine = pyttsx3.init()
+
+# makes microphone the audio source, prints messages, and
+# adjusts recognizer then listens for audio
+    try:
+        with microphone as source:
+            print("Adjusting for ambient noise...")
+            recognizer.adjust_for_ambient_noise(source)
+            print("Listening for your note...")
+            audio = recognizer.listen(source)
+
+# displays message audio is recognizing
+# has recognizer use Google speech rec to recognize audio
+# stores audio in note variable
+        print("Recognizing...")
+        note = recognizer.recognize_google(audio)
+        print(f"Your note: {note}")
+        save_note_to_file(note)
+
+ # error messages if unable to understand audio, speech rec service fails
+ # and other errors   
+    except sr.UnknownValueError:
+        print("Sorry, I could not understand the audio.")
+        tts_engine.say("Sorry, I could not understand the audio.")
+        tts_engine.runAndWait()
+    except sr.RequestError as e:
+        print(f"Could not request results; {e}")
+        tts_engine.say(f"Could not request results; {e}")
+        tts_engine.runAndWait()
+    except Exception as ex:
+        print(f"An error occurred: {ex}")
+        tts_engine.say(f"An error occurred: {ex}")
+        tts_engine.runAndWait()
+# checks if script is not imported and starts note taking process
+if __name__ == "__main__":
+    take_note()
