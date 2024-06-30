@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="My Virtual Aide Program" company="" webLink="http://" view-date="2024-05-12" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="en_US">
+    <description>
+        <![CDATA[A person assistant program that runs from the terminal line. This program can save a note to a .txt file, perfrorm a Google search, give you system information on your device, and take a screenshot.]]>
+    </description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[25,17,14,8,21,7,19,26,20,3,9,15,2,5,13,6,11,10,16,12,23,4,24,22,1]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#ff00cc #33ff33]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="Research" color="#8cb6ce" meeting="false" start="2024-05-13" duration="7" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="false">
+            <notes>
+                <![CDATA[Research voice command programs, Python, Raspian, Visual Studio Code]]>
+            </notes>
+        </task>
+        <task id="2" name="Practice" color="#8cb6ce" meeting="false" start="2024-05-20" duration="7" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Practice with Python, Visual Studio Code, voice command programming, GitLens, and GitHub]]>
+            </notes>
+            <task id="3" name="Planning" color="#8cb6ce" meeting="false" start="2024-05-20" duration="7" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Plan program out.]]>
+                </notes>
+            </task>
+        </task>
+        <task id="4" name="Design" color="#8cb6ce" meeting="false" start="2024-05-20" duration="7" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Design program and define perameters.]]>
+            </notes>
+        </task>
+        <task id="5" name="Program Notetaker" color="#8cb6ce" meeting="false" start="2024-05-27" duration="3" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Create Notetaker program.]]>
+            </notes>
+        </task>
+        <task id="6" name="Complete Notetaker" color="#ff00cc" meeting="true" start="2024-05-30" duration="0" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Complete Notetaker program.]]>
+            </notes>
+        </task>
+        <task id="7" name="Program Search" color="#8cb6ce" meeting="false" start="2024-05-31" duration="2" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Create Search program]]>
+            </notes>
+        </task>
+        <task id="8" name="Complete Search" color="#ff00cc" meeting="true" start="2024-06-02" duration="0" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Complete Search program.]]>
+            </notes>
+        </task>
+        <task id="9" name="Combine #1" color="#33ff33" meeting="true" start="2024-06-03" duration="0" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Combine Notetaker and Search programs.]]>
+            </notes>
+        </task>
+        <task id="10" name="Program Screenshot" color="#8cb6ce" meeting="false" start="2024-06-04" duration="3" complete="0" thirdDate="2024-05-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Create Screenshot program.]]>
+            </notes>
+        </task>
+        <task id="11" name="Complete Screenshot" color="#ff00cc" meeting="true" start="2024-06-07" duration="0" complete="0" thirdDate="2024-05-26" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Complete Screenshot program.]]>
+            </notes>
+        </task>
+        <task id="12" name="Combine #2" color="#33ff33" meeting="true" start="2024-06-08" duration="0" complete="0" thirdDate="2024-05-26" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Combine Screenshot to Notetaker and Search programs.]]>
+            </notes>
+        </task>
+        <task id="13" name="Create System Info" color="#8cb6ce" meeting="false" start="2024-06-09" duration="2" complete="0" thirdDate="2024-05-26" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Create System Info program.]]>
+            </notes>
+        </task>
+        <task id="14" name="Complete System Info" color="#ff00cc" meeting="true" start="2024-06-11" duration="0" complete="0" thirdDate="2024-05-26" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Complete System Info program.]]>
+            </notes>
+        </task>
+        <task id="15" name="Combine #3" color="#33ff33" meeting="true" start="2024-06-12" duration="0" complete="0" thirdDate="2024-05-26" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Combine System Info program to the main program.]]>
+            </notes>
+        </task>
+        <task id="16" name="Name Program" color="#ff00cc" meeting="true" start="2024-06-15" duration="0" complete="0" thirdDate="2024-05-13" thirdDate-constraint="0" expand="true"/>
+        <task id="17" name="Add Program Notes" color="#8cb6ce" meeting="false" start="2024-06-15" duration="2" complete="0" thirdDate="2024-05-13" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="Research Capstone Paper" color="#8cb6ce" meeting="false" start="2024-06-17" duration="2" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="Create Title Page" color="#8cb6ce" meeting="false" start="2024-06-19" duration="1" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+        <task id="21" name="Create Abstract" color="#8cb6ce" meeting="false" start="2024-06-20" duration="1" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+        <task id="22" name="Create Introduction" color="#8cb6ce" meeting="false" start="2024-06-21" duration="1" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+        <task id="24" name="Create Gannt Chart" color="#8cb6ce" meeting="false" start="2024-06-22" duration="1" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+        <task id="25" name="Create Milestones List" color="#8cb6ce" meeting="false" start="2024-06-23" duration="1" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+        <task id="26" name="Create WBS" color="#8cb6ce" meeting="false" start="2024-06-24" duration="1" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+        <task id="23" name="Create Methodology Section" color="#8cb6ce" meeting="false" start="2024-06-25" duration="7" complete="0" thirdDate="2024-04-28" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
